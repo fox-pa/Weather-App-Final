@@ -11,7 +11,7 @@ return `${day} ${hours}: ${minutes}`;
 
 }
 
-//function displayForecast(){
+function displayForecast(){
     
 let forecastElement = document.querySelector("#forecast");
 
