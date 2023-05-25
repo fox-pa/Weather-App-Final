@@ -40,6 +40,10 @@ li::first-letter{
     border: 1px solid gray;
     border-radius: 8px;;
 }
+.weather-app-wrapper{
+    max-width: 600px;
+    margin: 30px auto;
+}
 
 .overview{
     margin-bottom: 20px;
