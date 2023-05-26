@@ -37,6 +37,13 @@ forecastHTML = forecastHTML + `
 
 }
 
+function getForecast(coordinates){
+    console.log(coordinates);
+    let apiKey = "7f522d55ef52977a1d7501da2d2bc07c";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`
+    console.log(apiUrl)
+}
+
 function displayTemperature(response){
     console.log(response.data)
     let temeperatureElement = document.querySelector("#temperature")
@@ -61,6 +68,8 @@ function displayTemperature(response){
     iconElement.setAttribute("alt", response.data.weather[0].icon)
 
     ;
+
+    getForecast(response.data.coord);
 }
 
 function search(city){
